@@ -64,7 +64,7 @@ favoriteThings.food = 'Chicken Nuggets'
 //Code here
 let backPack = {}
 let item = 'firstPocket'
-backPack.item = 'chapstick'
+backPack[item] = 'chapstick'
 backPack.color = 'blue'
 /*
   After you do the above, alert your entire backPack object.
@@ -98,7 +98,8 @@ var user2 = {
   name -> 'Bryan G. Smith' and email -> 'bryan.smith@devmounta.in'.
   Make that change without modifying the original object code above.
 */
-
+user2.name = 'Bryan G. Smith'
+user2.email = 'bryan.smith@devmounta.in'
 //Code Here
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
@@ -109,20 +110,26 @@ var user2 = {
 /*
   Create an empty object called methodCollection.
 */
-
+let methodCollection = {}
 //Code Here
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object.
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console.
 */
-
+methodCollection.alertHello = function() {
+  alert('hello')
+}
+methodCollection.logHello = function() {
+  console.log('hello')
+}
 //Code Here
 
 /*
   Now call your alertHello and logHello methods.
 */
-
+alertHello()
+logHello()
 //Code Here
 
 ////////// PROBLEM 6 //////////
@@ -131,7 +138,14 @@ var user2 = {
   Create a function called makePerson which takes in name, birthday, ssn as its parameters.
   Return a new object with all of the information that you passed in.
 */
-
+function makePerson(name, birthday, ssn) {
+  let createdPerson = {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  }
+  return createdPerson
+}
 //Code Here
 
 ////////// PROBLEM 7 //////////
@@ -140,5 +154,13 @@ var user2 = {
   Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object.
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
+function makeCard(cardNumber, expirationDate, securityCode) { 
+let createdCard = {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
 
+  return createdCard
+}
 //Code Here
