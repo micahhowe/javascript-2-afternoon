@@ -17,7 +17,7 @@ let me = {
   name : 'Micah Howe',
   age: 31
 }
-//alert(me.name)
+alert(me.name)
 //Code here
 
 ////////// PROBLEM 2 //////////
@@ -69,7 +69,7 @@ backPack.color = 'blue'
 /*
   After you do the above, alert your entire backPack object.
 */
-//alert(backPack)
+alert(backPack)
 //Code here
 
 /*
